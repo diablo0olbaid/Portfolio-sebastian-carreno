@@ -106,13 +106,13 @@ function initReveal() {
 function heroTemplate() {
   return `
     <section class="hero">
-      <p class="hero__kicker">Sebastián Carreño — Portfolio 2023</p>
+      <p class="hero__kicker">Sebastián Carreño — Arquitecto, UBA FADU</p>
       <h1 class="hero__title">
         <span><em>Arquitectura</em></span>
         <span><em>y atmósfera.</em></span>
       </h1>
       <div class="hero__row">
-        <p class="hero__statement">Estudiante de Arquitectura, UBA · FADU. Cuatro proyectos sobre materialidad, luz y la relación entre el edificio y su entorno.</p>
+        <p class="hero__statement">Hoy coordino obras de remodelación premium en Buenos Aires. Este portfolio reúne cuatro proyectos académicos sobre materialidad, luz y la relación entre el edificio y su entorno.</p>
         <div class="hero__scroll">
           <span>Scroll</span>
           <span class="hero__scroll-line"></span>
@@ -122,20 +122,55 @@ function heroTemplate() {
   `;
 }
 
+const experience = [
+  {
+    role: 'Coordinador de Obra',
+    company: 'Tectónica Constructora',
+    dates: '2025 — actualidad',
+    text: 'Dirijo y coordino obras de remodelación premium en Buenos Aires, traduciendo el proyecto en soluciones concretas a pie de obra.',
+  },
+  {
+    role: 'Jefe de Obra',
+    company: 'Tectónica Constructora',
+    dates: '2023 — 2025',
+    text: 'Supervisión diaria de la ejecución y control exhaustivo de calidad constructiva y terminaciones.',
+  },
+  {
+    role: 'Ayudante de Cátedra — Arquitectura IV',
+    company: 'Universidad de Buenos Aires',
+    dates: '2025',
+    text: 'Docencia en la materia Arquitectura IV, FADU.',
+  },
+];
+
 function aboutTemplate() {
+  const expItems = experience
+    .map(
+      (e) => `
+      <div class="about__exp-item">
+        <div class="about__exp-head">
+          <span class="about__exp-role">${e.role}</span>
+          <span class="about__exp-dates">${e.dates}</span>
+        </div>
+        <p class="about__exp-company">${e.company}</p>
+        <p class="about__exp-text">${e.text}</p>
+      </div>`
+    )
+    .join('');
+
   return `
     <section class="section about" id="sobre-mi">
       <div class="about__bio reveal">
-        <p>Arquitecto en formación, <em>UBA — FADU</em>. Trabajo la arquitectura desde la materialidad y la atmósfera: cómo un espacio se siente antes que cómo se ve. Cada proyecto parte de una pregunta simple sobre el lugar — la relación con el paisaje, el rol de lo público, la luz — y se resuelve con honestidad constructiva.</p>
+        <p>Arquitecto, <em>UBA — FADU</em>. Mi trabajo se define por el rigor técnico y el control minucioso del detalle: llevar un proyecto de la lámina a la obra construida sin perder un milímetro de la visión original. Hoy dirijo remodelaciones premium en Buenos Aires; este portfolio reúne los proyectos académicos que formaron esa mirada.</p>
       </div>
       <div class="about__meta reveal">
         <div class="about__block">
-          <p class="about__block-title">Foco de trabajo</p>
-          <p>Vivienda, equipamiento cultural, oficinas y museos — proyectos de distinta escala unidos por la exploración material: madera y hormigón como protagonistas espaciales.</p>
+          <p class="about__block-title">Experiencia</p>
+          <div class="about__exp-list">${expItems}</div>
         </div>
         <div class="about__block">
           <p class="about__block-title">Formación</p>
-          <p>Universidad de Buenos Aires<br>Facultad de Arquitectura, Diseño y Urbanismo<br>Portfolio académico, 2023</p>
+          <p>Licenciatura en Arquitectura<br>Universidad de Buenos Aires — FADU<br>2018 — 2024</p>
         </div>
         <div class="about__block">
           <p class="about__block-title">Contacto</p>
@@ -168,7 +203,7 @@ function projectsIndexTemplate() {
 
   return `
     <section class="section" id="proyectos" style="padding-bottom: 2rem;">
-      <p class="section-label reveal">Proyectos seleccionados</p>
+      <p class="section-label reveal">Proyectos académicos seleccionados</p>
       <div class="projects-index">${rows}</div>
       <div class="project-row__preview" id="rowPreview"><img id="rowPreviewImg" src="" alt="" /></div>
     </section>
@@ -188,7 +223,7 @@ function footerTemplate() {
         </div>
       </div>
       <div class="footer__bottom">
-        <span>Sebastián Carreño — Estudiante de Arquitectura, UBA FADU</span>
+        <span>Sebastián Carreño — Arquitecto, UBA FADU</span>
         <span>© ${year}</span>
       </div>
     </footer>
