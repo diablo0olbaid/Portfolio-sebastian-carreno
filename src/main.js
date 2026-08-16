@@ -177,7 +177,7 @@ function aboutTemplate() {
           <div class="about__contacts">
             <a href="#" data-cursor="Escribir">Email</a>
             <a href="#" data-cursor="Ver">Instagram</a>
-            <a href="#" data-cursor="Ver">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/arq-sebastian-carreno/" target="_blank" rel="noopener" data-cursor="Ver">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -219,7 +219,7 @@ function footerTemplate() {
         <div class="footer__contacts">
           <a href="#" data-cursor="Escribir">sebastian.carreno@mail.com</a>
           <a href="#" data-cursor="Ver">Instagram ↗</a>
-          <a href="#" data-cursor="Ver">LinkedIn ↗</a>
+          <a href="https://www.linkedin.com/in/arq-sebastian-carreno/" target="_blank" rel="noopener" data-cursor="Ver">LinkedIn ↗</a>
         </div>
       </div>
       <div class="footer__bottom">
