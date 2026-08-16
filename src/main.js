@@ -175,8 +175,7 @@ function aboutTemplate() {
         <div class="about__block">
           <p class="about__block-title">Contacto</p>
           <div class="about__contacts">
-            <a href="#" data-cursor="Escribir">Email</a>
-            <a href="#" data-cursor="Ver">Instagram</a>
+            <a href="mailto:eduardosc561@gmail.com" data-cursor="Escribir">Email</a>
             <a href="https://www.linkedin.com/in/arq-sebastian-carreno/" target="_blank" rel="noopener" data-cursor="Ver">LinkedIn</a>
           </div>
         </div>
@@ -217,8 +216,7 @@ function footerTemplate() {
       <div class="footer__top">
         <h2 class="footer__title">Hablemos de tu <em>próximo proyecto</em>.</h2>
         <div class="footer__contacts">
-          <a href="#" data-cursor="Escribir">sebastian.carreno@mail.com</a>
-          <a href="#" data-cursor="Ver">Instagram ↗</a>
+          <a href="mailto:eduardosc561@gmail.com" data-cursor="Escribir">eduardosc561@gmail.com</a>
           <a href="https://www.linkedin.com/in/arq-sebastian-carreno/" target="_blank" rel="noopener" data-cursor="Ver">LinkedIn ↗</a>
         </div>
       </div>
