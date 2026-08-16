@@ -1,0 +1,118 @@
+const img = (folder, file) => `/images/projects/${folder}/${file}`;
+
+export const projects = [
+  {
+    slug: 'vivienda-delta',
+    number: '01',
+    name: 'Vivienda unifamiliar',
+    location: 'Delta, Tigre',
+    year: '2022',
+    program: 'Vivienda',
+    cover: img('01_vivienda_delta', '00_cover_clean.jpg'),
+    intro:
+      'La vivienda nace de la búsqueda entre la relación interior–exterior, siendo la naturaleza la protagonista de esta obra y la vivienda el soporte para poder vivirla y contemplarla.',
+    paragraphs: [
+      'Para lograr esto se desarrollaron dos volúmenes: uno en horizontal, más cercano al terreno, donde se ubican las áreas de convivencia de la casa; y otro volumen vertical donde se encuentran las áreas privadas de la vivienda. Este volumen crece en altura en forma de torre buscando las visuales más amplias del entorno donde se implanta — se podría decir que funciona como un mirador.',
+      'La vivienda se materializa en madera, no solo por su armonía con el paisaje, sino también por la dificultad que presenta construir en un entorno tan alejado, donde el único medio de transporte son las lanchas.',
+      'La estructura está conformada por un entramado de vigas de madera multilaminada encastradas entre sí (asemejándose a un casetonado) que descansan sobre columnas que a su vez transmiten las cargas a la plataforma de la vivienda y luego esta a los pilotes.',
+    ],
+    images: [
+      { src: img('01_vivienda_delta', '00_cover_clean.jpg'), caption: 'Vista exterior lejana — implantación en el paisaje del Delta', type: 'full' },
+      { src: img('01_vivienda_delta', '02_planta_axonometrica.jpg'), caption: 'Axonométrica general', type: 'plan' },
+      { src: img('01_vivienda_delta', '03_implantacion_plantas.jpg'), caption: 'Implantación y plantas', type: 'plan' },
+      { src: img('01_vivienda_delta', '04_corte.jpg'), caption: 'Corte transversal', type: 'plan' },
+      { src: img('01_vivienda_delta', '05_detalle_constructivo_exploded.jpg'), caption: 'Detalle constructivo — despiece de la estructura de madera', type: 'detail' },
+      { src: img('01_vivienda_delta', '06_render_exterior_entorno.jpg'), caption: 'La torre-mirador entre los árboles', type: 'full' },
+      { src: img('01_vivienda_delta', '07_render_exterior_cercano.jpg'), caption: 'Aproximación desde el agua', type: 'full' },
+      { src: img('01_vivienda_delta', '08_render_interior_living.jpg'), caption: 'Living — el entramado de madera como cielorraso', type: 'half' },
+      { src: img('01_vivienda_delta', '09_render_interior_cocina.jpg'), caption: 'Cocina, orientada hacia el paisaje', type: 'half' },
+    ],
+  },
+  {
+    slug: 'biblioteca-mataderos',
+    number: '02',
+    name: 'Biblioteca pública',
+    location: 'Mataderos, CABA',
+    year: '2021',
+    program: 'Equipamiento cultural',
+    cover: img('02_biblioteca_mataderos', '00_cover_clean.jpg'),
+    intro:
+      'Este proyecto se plantea como un punto de encuentro para la comunidad. Por esta razón, a la hora de proyectarlo se propuso que los diferentes programas funcionen de manera independiente, sin la necesidad de que la sala de lectura se encuentre abierta.',
+    paragraphs: [
+      'Esto posibilita el esparcimiento cultural, permitiendo usar los talleres y los espacios exteriores de la biblioteca fuera del horario habitual de funcionamiento.',
+      'Se buscó que el edificio sea un espacio acogedor y de contención, construido con materiales renovables y de industria nacional. Por esta razón se decidió usar madera multilaminada, una técnica constructiva fiable y de gran velocidad de montaje a la hora de construir, ya que gran parte de las piezas se pueden prefabricar en taller.',
+      'El edificio se divide en dos plantas: la baja es un espacio con mayor tránsito que necesita menos privacidad, por lo que se plantearon ahí los espacios públicos; mientras que en la planta alta se encuentran las áreas que necesitan mayor seguridad y silencio, donde están ubicadas las diferentes salas de lectura.',
+    ],
+    images: [
+      { src: img('02_biblioteca_mataderos', '00_cover_clean.jpg'), caption: 'Fachada sobre la calle', type: 'full' },
+      { src: img('02_biblioteca_mataderos', '02_planta_baja.jpg'), caption: 'Planta baja — programas públicos', type: 'plan' },
+      { src: img('02_biblioteca_mataderos', '03_planta_alta.jpg'), caption: 'Planta alta — salas de lectura', type: 'plan' },
+      { src: img('02_biblioteca_mataderos', '04_vista_corte_AA.jpg'), caption: 'Corte A-A', type: 'plan' },
+      { src: img('02_biblioteca_mataderos', '05_vista_corte_CC.jpg'), caption: 'Corte C-C', type: 'plan' },
+      { src: img('02_biblioteca_mataderos', '06_detalle_constructivo_DD.jpg'), caption: 'Detalle constructivo D-D — estructura de madera multilaminada', type: 'detail' },
+      { src: img('02_biblioteca_mataderos', '07_render_patio_interior.jpg'), caption: 'Patio interior', type: 'full' },
+      { src: img('02_biblioteca_mataderos', '08_render_pergola_exterior.jpg'), caption: 'Pérgola exterior', type: 'half' },
+      { src: img('02_biblioteca_mataderos', '09_render_hall_interior.jpg'), caption: 'Hall de acceso', type: 'half' },
+      { src: img('02_biblioteca_mataderos', '10_maqueta.jpg'), caption: 'Maqueta de estudio', type: 'full' },
+    ],
+  },
+  {
+    slug: 'oficinas-mataderos',
+    number: '03',
+    name: 'Edificio de oficinas',
+    location: 'Mataderos, CABA',
+    year: '2021',
+    program: 'Oficinas',
+    cover: img('03_oficinas_mataderos', '00_cover_clean.jpg'),
+    intro:
+      'El proyecto se desarrolla en el barrio de Mataderos, en una zona con alta presencia de locales comerciales a pesar de ser un barrio residencial y de escala baja, con la excepción de algunos edificios residenciales de máximo siete pisos.',
+    paragraphs: [
+      'A la hora de plantear el edificio se propuso adaptar las alturas del proyecto a la de los edificios linderos, generando de esta manera un volumen en forma de L. Con esta forma se genera una fachada de mayor tamaño que mira al sur, considerada la mejor orientación para el tipo de actividades que se desarrollan en este tipo de edificios, mientras que en las fachadas este y oeste se desarrollan patios de doble altura donde se puede trabajar al aire libre además de contar con un espacio para descansar.',
+      'A su vez, estas fachadas se recomponen con un sistema de parasoles para proteger a los usuarios de la luz directa del sol.',
+    ],
+    images: [
+      { src: img('03_oficinas_mataderos', '00_cover_clean.jpg'), caption: 'Fachada sur', type: 'full' },
+      { src: img('03_oficinas_mataderos', '02_planta_subsuelo_baja.jpg'), caption: 'Planta subsuelo y planta baja', type: 'plan' },
+      { src: img('03_oficinas_mataderos', '03_plantas_tipo.jpg'), caption: 'Plantas tipo', type: 'plan' },
+      { src: img('03_oficinas_mataderos', '04_plantas_tipo_2.jpg'), caption: 'Plantas tipo — variante', type: 'plan' },
+      { src: img('03_oficinas_mataderos', '05_elevaciones_cortes.jpg'), caption: 'Elevaciones y cortes', type: 'plan' },
+      { src: img('03_oficinas_mataderos', '06_detalle_fachada_axo.jpg'), caption: 'Axonométrica de detalle — sistema de parasoles', type: 'detail' },
+      { src: img('03_oficinas_mataderos', '07_render_esquina_exterior.jpg'), caption: 'Vista de esquina', type: 'full' },
+      { src: img('03_oficinas_mataderos', '08_render_acceso.jpg'), caption: 'Acceso principal', type: 'half' },
+      { src: img('03_oficinas_mataderos', '09_render_interior_oficina.jpg'), caption: 'Planta libre de oficinas', type: 'half' },
+      { src: img('03_oficinas_mataderos', '10_render_interior_mezzanine.jpg'), caption: 'Mezzanine sobre patio de doble altura', type: 'full' },
+      { src: img('03_oficinas_mataderos', '11_maqueta.jpg'), caption: 'Maqueta de estudio', type: 'full' },
+    ],
+  },
+  {
+    slug: 'museo-naval-tigre',
+    number: '04',
+    name: 'Museo naval',
+    location: 'Tigre',
+    year: '2022',
+    program: 'Museo',
+    cover: img('04_museo_naval_tigre', '06_render_fachada_cartel.jpg'),
+    intro:
+      'El proyecto nace de la búsqueda de espacios contenedores, los cuales se abren y se cierran al usuario permitiendo ir descubriendo el edificio con cada paso que se da, comprimiendo o expandiendo los sentidos del usuario, y creando diferentes atmósferas — unas más sombrías y otras más luminosas.',
+    paragraphs: [
+      'Con esta búsqueda en mente, la formalidad del edificio comenzó a tomar fuerza, y la manera de llevarlo a cabo fue por medio de planos verticales con diferentes alturas, que se desfasan y se cruzan entre sí conteniendo el programa en su interior.',
+      'Los planos fueron materializados con hormigón, ya que con este material se permite generar diferentes texturas y tonalidades con un mismo sistema constructivo; a su vez, estas características permitieron darle identidad a cada uno de los espacios que conforman el museo.',
+    ],
+    images: [
+      { src: img('04_museo_naval_tigre', '06_render_fachada_cartel.jpg'), caption: 'Acceso desde la costanera', type: 'full' },
+      { src: img('04_museo_naval_tigre', '01_cover_render_fachada_MUNT.jpg'), caption: 'Planta de implantación', type: 'plan' },
+      { src: img('04_museo_naval_tigre', '02_planta_general.jpg'), caption: 'Planta general', type: 'plan' },
+      { src: img('04_museo_naval_tigre', '03_planta_detalle.jpg'), caption: 'Planta de detalle', type: 'plan' },
+      { src: img('04_museo_naval_tigre', '04_cortes.jpg'), caption: 'Cortes', type: 'plan' },
+      { src: img('04_museo_naval_tigre', '05_detalle_cubierta.jpg'), caption: 'Detalle constructivo de cubierta', type: 'detail' },
+      { src: img('04_museo_naval_tigre', '07_render_fachada_angulo.jpg'), caption: 'Los planos de hormigón desfasados', type: 'full' },
+      { src: img('04_museo_naval_tigre', '08_render_muro_hormigon_escultura.jpg'), caption: 'Muro de hormigón como soporte expositivo', type: 'half' },
+      { src: img('04_museo_naval_tigre', '09_render_lobby_interior.jpg'), caption: 'Lobby de ingreso', type: 'half' },
+      { src: img('04_museo_naval_tigre', '10_render_patio_pasillo.jpg'), caption: 'Circulación — patio y pasillo', type: 'full' },
+      { src: img('04_museo_naval_tigre', '11_render_interior_nave_barco.jpg'), caption: 'Nave principal — exhibición naval', type: 'full' },
+      { src: img('04_museo_naval_tigre', '12_render_galeria_cuadros.jpg'), caption: 'Galería', type: 'half' },
+    ],
+  },
+];
+
+export const getProjectBySlug = (slug) => projects.find((p) => p.slug === slug);

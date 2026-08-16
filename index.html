@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sebastián Carreño — Estudiante de Arquitectura, UBA FADU. Portfolio de proyectos académicos." />
+    <title>Sebastián Carreño — Arquitectura</title>
+  </head>
+  <body>
+    <div id="loader" class="loader" aria-hidden="true">
+      <span class="loader__mark">SC</span>
+    </div>
+
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <span class="cursor__label">Ver</span>
+    </div>
+
+    <header class="nav" id="nav">
+      <a href="/" class="nav__brand" data-link>Sebastián Carreño</a>
+      <nav class="nav__links">
+        <a href="/#sobre-mi" class="nav__link" data-link>Sobre mí</a>
+        <a href="/#proyectos" class="nav__link" data-link>Proyectos</a>
+        <a href="/#contacto" class="nav__link" data-link>Contacto</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main id="app"></main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
